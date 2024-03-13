@@ -3,33 +3,23 @@ import "./index";
 import Navbar from "./components/Navbar";
 import Home from "./components/Home/Home";
 import Footer from "./components/Footer";
-import Engines from "./components/Engines";
-import UsraBmod from "./components/Engines/USRA/USRA-Bmod";
-import UsraStockCar from "./components/Engines/USRA/USRA-StockCar";
-import UsraAmod from "./components/Engines/USRA/USRA-Amod";
-import ImcaSportMod from "./components/Engines/IMCA/IMCA-SportMod";
-import ImcaStockCar from "./components/Engines/IMCA/IMCA-StockCar";
-import ImcaModified from "./components/Engines/IMCA/IMCA-Modifieds";
-import DragRace from "./components/Engines/DragRace";
-import Street from "./components/Engines/Street";
-import Contact from "./components/Contact-Old";
+import Header from "./components/Header"
+import Schedule from "./components/Schedule"
+import Rules from "./components/Rules"
+import NewsHome from "./components/NewsHome";
+import NewsDetail from "./components/NewsDetail";
 
 function App() {
   return (
     <Router>
+      <Header />
       <Navbar />
       <Routes>
         <Route path="/" element={<Home />}></Route>
-        <Route path="/Engines" element={<Engines />}></Route>
-        <Route path="/UsraBmod" element={<UsraBmod />}></Route>
-        <Route path="/UsraStockCar" element={<UsraStockCar />}></Route>
-        <Route path="/UsraAmod" element={<UsraAmod />}></Route>
-        <Route path="/ImcaSportMod" element={<ImcaSportMod />}></Route>
-        <Route path="/ImcaStockCar" element={<ImcaStockCar />}></Route>
-        <Route path="/ImcaModified" element={<ImcaModified />}></Route>
-        <Route path="/DragRace" element={<DragRace />}></Route>
-        <Route path="/Street" element={<Street />}></Route>
-        <Route path="/Contact" element={<Contact />}></Route>
+        <Route path="/schedule" element={<Schedule />}></Route>
+        <Route path="/rules" element={<Rules />}></Route>
+        <Route path="/news" element={<NewsHome />}></Route>
+        <Route path="/newsdetail" element={<NewsDetail />}></Route>
       </Routes>
       <Footer />
     </Router>

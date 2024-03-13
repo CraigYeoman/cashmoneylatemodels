@@ -1,3 +1,7 @@
+:root {
+  --main-bg-color: green;
+}
+
 html {
   position: relative;
   min-height: 100%;
@@ -5,11 +9,20 @@ html {
 
 body {
   margin: 0 0 40px;
-  background-color: #18181b !important;
+  background-image: url(images/background.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  font-family: "Roboto", sans-serif;
 }
 
 html {
-  font-family: "Noto Sans", Helvetica, Arial, Lucida, sans-serif;
+  font-family: "Roboto";
+}
+
+.bg-main {
+  background-color: var(--main-bg-color);
 }
 
 /* General */
@@ -62,11 +75,50 @@ html {
 /* Navbar */
 
 .header {
-  background-color: transparent;
+  height: 90px;
+  filter: grayscale(1);
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
 }
 
-.header-bg {
-  background-color: rgba(0, 0, 0, 0.9);
+.header img {
+  object-fit: contain;
+}
+
+.nav {
+  background-color: var(--main-bg-color);
+  height: 60px;
+  flex-wrap: nowrap;
+}
+
+.navbar {
+  flex-wrap: nowrap !important;
+}
+
+.show {
+  position: absolute;
+  top: 100%;
+  left: 0px;
+  padding: 5px;
+  background: green;
+  width: 100vw;
+}
+.collapsing {
+  position: absolute;
+  top: 100%;
+  left: 0px;
+  padding: 5px;
+  background: green;
+  width: 100vw;
+}
+
+.navbar-collapse {
+  z-index: 1;
+}
+
+.nav-bg {
+  background-color: rgba(0, 128, 0, 0.589);
 }
 
 .nav-link {
@@ -88,10 +140,12 @@ html {
 }
 
 .nav--icon {
-  height: 35px;
+  height: 150px;
   padding-right: 8px;
   padding-left: 15px;
 }
+
+
 
 .nav--item {
   color: white;
@@ -163,7 +217,8 @@ html {
   }
 }
 
-@media screen and (max-width: 450px) {
+
+  
   .nav--item,
   .nav--bar.title {
     display: none;
@@ -213,7 +268,7 @@ html {
   .header {
     background-color: rgba(0, 0, 0, 0.9);
   }
-}
+
 
 @media screen and (max-width: 500px) {
   .vh-50 {
@@ -221,7 +276,23 @@ html {
   }
 }
 
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 450px) {
+  .nav--icon {
+    height: 75px;
+
+
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .nav--icon {
+    height: 100px;
+
+
+  }
+}
+
+@media screen and (max-width: 800px) {
   .vh-50 {
     height: 50vh;
   }
@@ -235,6 +306,13 @@ html {
   z-index: 0;
   width: 100vw;
   max-width: 100%;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+@media screen and (min-width: 1200px){}
+.main--container {
+    max-width: 1140px;
 }
 
 .video--container {
@@ -386,6 +464,41 @@ html {
 .fb--container {
   width: 340px;
 }
+
+/* carousel-image */
+
+.carousel {
+  padding-right: 25px;
+}
+
+.carousel-image {
+  height: 450px;
+  width: 730px;
+}
+
+.news-home {
+  background-color: var(--main-bg-color);
+  height: 450px;
+}
+
+.news-home-list {
+  height: 450px;
+}
+
+.hidden-text {
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+}
+
+@media screen and (max-width: 960px) {
+  .carousel {
+    padding-right: 0;
+  }
+}
+
+
 
 /* Engines Nav Page */
 

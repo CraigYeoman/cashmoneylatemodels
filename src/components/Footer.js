@@ -1,13 +1,13 @@
 import React from "react";
-import logo from "../images/yeomanRaceEnginesLogo.svg";
+import logo from "../images/logo.png";
 import Nav from "react-bootstrap/Nav";
 
 const Footer = () => {
   let date = new Date().getFullYear();
 
   return (
-    <div className="container">
-      <footer className="d-flex flex-wrap justify-content-between align-items-center pb-3 mb-4">
+    <div className="w-100 bg-main mt-3 mx-0">
+      <footer className="d-flex flex-wrap justify-content-between align-items-center px-3">
         <div className="col-md-4 d-flex align-items-center">
           <a
             href="/"
@@ -16,11 +16,11 @@ const Footer = () => {
             <img src={logo} className="bi" alt="logo" width="80" />
           </a>
           <span className="mb-3 mb-md-0 text-white">
-            &copy; {date} Yeoman Race Engines
+            &copy; {date} Cash Money Late Model Series
           </span>
         </div>
 
-        <ul className="nav col-md-4 justify-content-end list-unstyled d-flex">
+        {/* <ul className="nav col-md-4 justify-content-end list-unstyled d-flex">
           <Nav.Link className="nav-link px-2" href="#top">
             Top of Page
           </Nav.Link>
@@ -29,7 +29,7 @@ const Footer = () => {
               <svg className="bi" width="24" height="24"></svg>
             </a>
           </li>
-        </ul>
+        </ul> */}
       </footer>
     </div>
   );

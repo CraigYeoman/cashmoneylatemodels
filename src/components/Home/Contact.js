@@ -1,7 +1,6 @@
 import { MdOutlineEmail } from "react-icons/md";
 import { LuPhone } from "react-icons/lu";
 import { IoLocationSharp } from "react-icons/io5";
-import Location from "../../images/location.png";
 
 const Contact = () => {
   return (
@@ -9,7 +8,7 @@ const Contact = () => {
       <div className="row flex-lg-row-reverse align-items-center g-5 p-4 ">
         <div className="col-sm-8 col-lg-6 d-flex">
           <img
-            src={Location}
+            src={""}
             className="d-block mx-lg-auto img-fluid"
             alt="Bootstrap Themes"
             width="700"

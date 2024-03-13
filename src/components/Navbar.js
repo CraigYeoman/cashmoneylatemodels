@@ -1,6 +1,6 @@
 import { useState } from "react";
 import "../style.css";
-import logo from "../images/yeomanRaceEnginesLogo.svg";
+import logo from "../images/logo.png";
 import Container from "react-bootstrap/Container";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
@@ -21,21 +21,23 @@ const Header = () => {
   return (
     <Navbar
       expand="lg"
-      fixed="top"
-      className={color ? "header header-bg" : "header"}
+
+      className={color ? "nav nav-bg" : "nav"}
     >
       <Container>
         <Navbar.Brand>
-          <Nav.Link href="#top">
-            <img src={logo} className="nav--icon" alt="logo" />
+          <Nav.Link href="/">
+            <img src={logo} className="navbar-logo nav--icon" alt="logo" />
           </Nav.Link>
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="me-auto">
-            <Nav.Link href="#top">Home</Nav.Link>
-
-            <Nav.Link href="#Contact">Contact</Nav.Link>
+            <Nav.Link href="/">Home</Nav.Link>
+            <Nav.Link href="/news">News</Nav.Link>
+            <Nav.Link href="/schedule">Schedule</Nav.Link>
+            <Nav.Link href="/rules">Rules</Nav.Link>
+            <Nav.Link href="/contact">Contact</Nav.Link>
           </Nav>
         </Navbar.Collapse>
       </Container>
