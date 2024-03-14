@@ -9,7 +9,7 @@ const Bio = () => {
             About/Mission Statement
           </h1>
           <p className="lead text-secondary">
-          Dirt Late Model Series designed to save the racers money while still providing high quality racing for the fans!
+          Cash Money Dirt Late Model Series designed to save the racers money while still providing high quality racing for the fans!
           </p>
           <div className="d-grid gap-2 d-md-flex justify-content-md-start">
             <Button href="#Contact" variant="outline-secondary">
