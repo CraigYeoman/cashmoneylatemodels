@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/cashmoneylatemodels/static/css/main.abdb8bf3.css",
-    "main.js": "/cashmoneylatemodels/static/js/main.e7d95ddb.js",
+    "main.js": "/cashmoneylatemodels/static/js/main.9b7c5cb9.js",
     "static/media/background.jpg": "/cashmoneylatemodels/static/media/background.79f6b3e4c030b068fb6f.jpg",
     "static/media/header.jpg": "/cashmoneylatemodels/static/media/header.00278ff11e08855755de.jpg",
     "static/media/schedule.jpg": "/cashmoneylatemodels/static/media/schedule.f943face2414891e4a16.jpg",
@@ -43,10 +43,10 @@
     "static/media/americanracer.png": "/cashmoneylatemodels/static/media/americanracer.4f2475340e225f8ba193.png",
     "index.html": "/cashmoneylatemodels/index.html",
     "main.abdb8bf3.css.map": "/cashmoneylatemodels/static/css/main.abdb8bf3.css.map",
-    "main.e7d95ddb.js.map": "/cashmoneylatemodels/static/js/main.e7d95ddb.js.map"
+    "main.9b7c5cb9.js.map": "/cashmoneylatemodels/static/js/main.9b7c5cb9.js.map"
   },
   "entrypoints": [
     "static/css/main.abdb8bf3.css",
-    "static/js/main.e7d95ddb.js"
+    "static/js/main.9b7c5cb9.js"
   ]
 }
